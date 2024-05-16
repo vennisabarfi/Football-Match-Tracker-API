@@ -14,6 +14,7 @@ app.get('/', function(req,res){
 //authentication 
 app.use(authRouter);
 
+// server listen
 app.listen(PORT, function(error){
     try{
     console.log(`Server is listening on Port ${PORT}`);
