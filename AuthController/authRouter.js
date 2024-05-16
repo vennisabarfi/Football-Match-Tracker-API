@@ -30,7 +30,7 @@ router.post('/users', async function(req,res){
     }
 })
 
-//login
+//user login
 router.post('users/login', async function(req,res){
     const user = users.find(user => user.name === req.body.username);
     if(user == null){
